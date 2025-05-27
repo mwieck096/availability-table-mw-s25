@@ -1,0 +1,53 @@
+:root {
+  --color0: #f2f2f2;
+  --color1: #d6eaf8;
+  --color2: #aed6f1;
+  --color3: #5dade2;
+  --color4: #2e86c1;
+  --color5: #1b4f72;
+
+  --solid-border: 2px solid black;
+  --dashed-border: 2px dashed grey;
+}
+
+.available-0 { background-color: var(--color0); }
+.available-1 { background-color: var(--color1); }
+.available-2 { background-color: var(--color2); }
+.available-3 { background-color: var(--color3); }
+.available-4 { background-color: var(--color4); }
+.available-5 { background-color: var(--color5); }
+
+.sharp td {
+  border-bottom: var(--solid-border);
+}
+.half td {
+  border-bottom: var(--dashed-border);
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+  text-align: center;
+}
+th, td {
+  padding: 10px;
+  width: 25%;
+}
+.time {
+  text-align: left;
+}
+#legend {
+  margin-top: 20px;
+}
+#legend-gradient {
+  height: 20px;
+  margin-top: 5px;
+  background-image: linear-gradient(
+    to right,
+    var(--color0) 0%, var(--color0) 16.66%,
+    var(--color1) 16.66%, var(--color1) 33.33%,
+    var(--color2) 33.33%, var(--color2) 50%,
+    var(--color3) 50%, var(--color3) 66.66%,
+    var(--color4) 66.66%, var(--color4) 83.33%,
+    var(--color5) 83.33%, var(--color5) 100%
+  );
+}
